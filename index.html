@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18274964444"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18274964444');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Seguro RC Médica | CRX Seguros</title>
@@ -172,6 +180,7 @@ async function enviarFormulario() {
     });
     document.getElementById('form-card').style.display = 'none';
     document.getElementById('success-box').style.display = 'block';
+    gtag('event', 'conversion', {'send_to': 'AW-18274964444'});
   } catch (err) {
     btn.disabled = false;
     btn.textContent = 'Quero minha análise gratuita';
